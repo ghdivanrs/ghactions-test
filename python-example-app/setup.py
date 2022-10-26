@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as readme:
 
 setuptools.setup(
     name="kildiesel-app-kc",
-    version="0.0.3",
+    version="0.0.30",
     author="Diego Ivan Rodriguez",
     author_email="kildiesel@gmail.com",
     description="A small example package",

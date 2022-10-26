@@ -4,10 +4,10 @@ with open("README.md", "r", encoding="utf-8") as readme:
     long_description = readme.read()
 
 setuptools.setup(
-    name="example-app-kc",
-    version="0.0.21",
-    author="Marta Arcones",
-    author_email="marta.arcones@gmail.com",
+    name="kildiesel-app-kc",
+    version="0.0.3",
+    author="Diego Ivan Rodriguez",
+    author_email="kildiesel@gmail.com",
     description="A small example package",
     long_description=long_description,
     long_description_content_type="text/markdown",

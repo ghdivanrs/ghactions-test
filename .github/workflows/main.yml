@@ -43,3 +43,9 @@ jobs:
       
     - name: Dockerize
       run: cd docker && docker build -f Dockerfile -t kildiesel/github-image:latest .
+      
+    - name: Docker Hub Login Credentials
+      run: docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+    - name: DockerHub Publish
+      run: docker push kildiesel/github-image:latest

@@ -40,3 +40,6 @@ jobs:
     - name: Deploy Pypi
       run: python -m twine upload dist/* --skip-existing -u ${{ secrets.PYPI_CREDENTIALS_USER }} -p ${{ secrets.PYPI_CREDENTIALS_PASSWORD }}
       working-directory: ./python-example-app
+      
+    - name: Dockerize
+      run: cd docker && docker build -f Dockerfile -t kildiesel/github-image:latest .
